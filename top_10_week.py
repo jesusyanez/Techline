@@ -74,7 +74,7 @@ def new_submissions(df):
 
 
 
-#takes top 10 data and appends list into html file
+#takes top 5 data and appends list into html file
 def to_html_list(df_current):
     #reads csv we just saved and stores as df
     df_current1 = pd.read_csv('top10weekly.csv', index_col=0)
@@ -89,43 +89,9 @@ def to_html_list(df_current):
     akit4 = df_current1.iloc[4, 2]
     alink5 = df_current1.iloc[5, 1]
     akit5 = df_current1.iloc[5, 2]
-    alink6 = df_current1.iloc[6, 1]
-    akit6 = df_current1.iloc[6, 2]
-    alink7 = df_current1.iloc[7, 1]
-    akit7 = df_current1.iloc[7, 2]
-    alink8 = df_current1.iloc[8, 1]
-    akit8 = df_current1.iloc[8, 2]
-    alink9 = df_current1.iloc[9, 1]
-    akit9 = df_current1.iloc[9, 2]
-    alink10 = df_current1.iloc[10, 1]
-    akit10 = df_current1.iloc[10, 2]
     #close csv after we stored variables
     df_current1.to_csv('top10weekly.csv')
-    #open up csv for month data
-    df_current1 = pd.read_csv('top10monthly.csv', index_col=0)
-    #store variables again from csv df
-    blink1 = df_current1.iloc[1, 1]
-    bkit1 = df_current1.iloc[1, 2]
-    blink2 = df_current1.iloc[2, 1]
-    bkit2 = df_current1.iloc[2, 2]
-    blink3 = df_current1.iloc[3, 1]
-    bkit3 = df_current1.iloc[3, 2]
-    blink4 = df_current1.iloc[4, 1]
-    bkit4 = df_current1.iloc[4, 2]
-    blink5 = df_current1.iloc[5, 1]
-    bkit5 = df_current1.iloc[5, 2]
-    blink6 = df_current1.iloc[6, 1]
-    bkit6 = df_current1.iloc[6, 2]
-    blink7 = df_current1.iloc[7, 1]
-    bkit7 = df_current1.iloc[7, 2]
-    blink8 = df_current1.iloc[8, 1]
-    bkit8 = df_current1.iloc[8, 2]
-    blink9 = df_current1.iloc[9, 1]
-    bkit9 = df_current1.iloc[9, 2]
-    blink10 = df_current1.iloc[10, 1]
-    bkit10 = df_current1.iloc[10, 2]
-    #close csv
-    df_current1.to_csv('top10monthly.csv')
+
     #prepare to append/wrap variables to html
     kit_info = {
       'link1': alink1,
@@ -138,37 +104,7 @@ def to_html_list(df_current):
       'kit4': akit4,
       'link5': alink5,
       'kit5': akit5,
-      'link6':alink6,
-      'kit6': akit6,
-      'link7': alink7,
-      'kit7': akit7,
-      'link8': alink8,
-      'kit8': akit8,
-      'link9': alink9,
-      'kit9': akit9,
-      'link10': alink10,
-      'kit10': akit10,
 
-      'link11': blink1,
-      'kit11': bkit1,
-      'link12': blink2,
-      'kit12': bkit2,
-      'link13': blink3,
-      'kit13': bkit3,
-      'link14': blink4,
-      'kit14': bkit4,
-      'link15': blink5,
-      'kit15': bkit5,
-      'link16':blink6,
-      'kit16': bkit6,
-      'link17': blink7,
-      'kit17': bkit7,
-      'link18': blink8,
-      'kit18': bkit8,
-      'link19': blink9,
-      'kit19': bkit9,
-      'link20': blink10,
-      'kit20': bkit10,
 
     }
 
@@ -184,22 +120,12 @@ def to_html_list(df_current):
       <meta name="description" content="">
       <meta name="author" content="">
 
-      <title>TechLine - Breaking Tech News</title>
+      <title>TechLine</title>
       <link rel="shortcut icon" href="favicons.ico" />
 
       <!-- Bootstrap core CSS -->
       <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
       <link href="custom.css" rel="stylesheet">
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145008938-2"></script>
-      <script>
-         window.dataLayer = window.dataLayer || [];
-         function gtag(){{dataLayer.push(arguments);}}
-         gtag('js', new Date());
-
-         gtag('config', 'UA-145008938-2');
-      </script>
-
 
     </head>
 
@@ -218,7 +144,7 @@ def to_html_list(df_current):
       <div class="container">
         <div class="row">
           <div class="col-md-9 text-center">
-            <h1>Breaking News</h1>
+            <h1>Breaking Tech News</h1>
 
             <div class="embed-responsive embed-responsive-1by1">
 
@@ -246,68 +172,18 @@ def to_html_list(df_current):
               <li>
                 <a href="{link5}" target="_blank">{kit5}</a>
               </li>
-              <li>
-                <a href="{link6}" target="_blank">{kit6}</a>
-              </li>
-              <li>
-                <a href="{link7}" target="_blank">{kit7}</a>
-              </li>
-              <li>
-                <a href="{link8}" target="_blank">{kit8}</a>
-              </li>
-              <li>
-                <a href="{link9}" target="_blank">{kit9}</a>
-              </li>
-              <li>
-                <a href="{link10}" target="_blank">{kit10}</a>
-              </li>
             </ol>
 
             <br/>
-            <br>
-            <h2>
-              <u>Major This Month</u>
-            </h2>
-            <ol class="text-left">
-              <li>
-                <a href="{link11}" target="_blank">{kit11}</a>
-              </li>
-              <li>
-                <a href="{link12}" target="_blank">{kit12}</a>
-              </li>
-              <li>
-                <a href="{link13}" target="_blank">{kit13}</a>
-              </li>
-              <li>
-                <a href="{link14}" target="_blank">{kit14}</a>
-              </li>
-              <li>
-                <a href="{link15}" target="_blank">{kit15}</a>
-              </li>
-              <li>
-                <a href="{link16}" target="_blank">{kit16}</a>
-              </li>
-              <li>
-                <a href="{link17}" target="_blank">{kit17}</a>
-              </li>
-              <li>
-                <a href="{link18}" target="_blank">{kit18}</a>
-              </li>
-              <li>
-                <a href="{link19}" target="_blank">{kit19}</a>
-              </li>
-              <li>
-                <a href="{link20}" target="_blank">{kit20}</a>
-              </li>
 
-            </ol>
+
           </div>
 
 
           <div class="col-lg-12 text-center">
 
 
-            <p class="lead">TechLine | Jesus R. Yanez</p>
+            <p class="lead">TechLine | Jesus Yanez</p>
             <ul class="list-unstyled">
 
             </ul>

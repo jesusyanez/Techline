@@ -47,7 +47,7 @@
 
 </br>
 
-This project basically collects the top posts from the r/technology subreddit and displays them on a custom site.
+This project is a tech new website that displays the top articles shared on the r/technology subreddit.
 
 Main features:
 * Reddit API scraping

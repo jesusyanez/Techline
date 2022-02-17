@@ -119,7 +119,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Jesus Yanez - [@gitjit](https://twitter.com/gitjit) - jryanez@jryanez.com
+Jesus Yanez - jryanez@jryanez.com
 
 Project Link: [https://github.com/jesusyanez/Techline](https://github.com/jesusyanez/Techline)
 

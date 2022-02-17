@@ -47,7 +47,7 @@
 
 </br>
 
-This project is a tech new website that displays the top articles shared on the r/technology subreddit.
+This project is a tech news website that exclusively scrapes its data from recent top posts on <a href="https://reddit.com/r/technology/">reddit.com/r/technology</a>.
 
 Main features:
 * Reddit API scraping

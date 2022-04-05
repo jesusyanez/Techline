@@ -47,15 +47,14 @@
 
 </br>
 
-This project is a tech news website that exclusively scrapes its data from recent top posts on <a href="https://reddit.com/r/technology/">reddit.com/r/technology</a>.
+This project is a tech news website.
 
-Main features:
-* Reddit API scraping
-* Data cleaning/manipulation
-* Displaying CSV data
-* Self-updating
-* Complete automation
-* Responsive design
+Major Features:
+* Automated scraping scripts
+* Automated data processing scripts
+* Cron jobs for Bash scripts
+* CSV to HTML table
+* Responsive mobile-ready design
 
 
 
@@ -74,29 +73,11 @@ Main features:
 * [jQuery](https://jquery.com/)
 
 
-#### Other tools
-* [Reddit API](https://www.reddit.com/dev/api/)
-* [Raspberry Pi OS / Linux](https://www.raspberrypi.com/software/)
- * [Bash](https://www.gnu.org/software/bash/)
- * [Cron job](https://en.wikipedia.org/wiki/Cron)
-* [GitHub Pages](https://pages.github.com/)
-
-
-
-#### Abandoned tools
-* [AWS Lightsail](https://aws.amazon.com/lightsail/)
- * [Windows Server 2016](https://www.microsoft.com/en-us/windows-server)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Host on GitHub Pages
-- [x] Create README
 - [ ] Add REACT front-end
   - [ ] Infinite scroll
 - [ ] Create FANG counter
@@ -133,11 +114,6 @@ Project Link: [https://github.com/jesusyanez/Techline](https://github.com/jesusy
 
 * [PRAW  (Python Reddit API Wrapper)](https://praw.readthedocs.io/en/stable/)
 * [PANDAS](https://pandas.pydata.org/)
-* [ derekeder / csv-to-html-table ](https://github.com/derekeder/csv-to-html-table)
-* [ JosephLai241 /
-URS](https://github.com/JosephLai241/URS)
-* [ othneildrew /
-Best-README-Template ](https://github.com/othneildrew/Best-README-Template)
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>

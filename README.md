@@ -47,8 +47,6 @@
 
 </br>
 
-This project is a tech news website.
-
 Major Features:
 * Automated scraping scripts
 * Automated data processing scripts

@@ -25,7 +25,7 @@
   <br />
 
   <p align="center">
-  A fresh, responsive, fully-automated, technology news platform. :satellite:
+  A fully-automated technology news platform. :satellite:
     <br />
     <a href="https://jesusyanez.github.io/Techline/"><strong>View Demo »</strong></a>
     <br />
